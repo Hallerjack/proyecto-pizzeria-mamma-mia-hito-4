@@ -98,6 +98,80 @@ Además, debe estar formateado con el separador de miles, ej: 25.000.
     - Deberá ser llamado en el App.jsx
     - Puedes agregar la información que consideres necesaria.
 
+## Hito 2
+
+### Instrucciones dadas:
+
+En este Hito validaremos nuestros conocimientos de Estados de los componentes y eventos. Para lograrlo, necesitarás aplicar los conocimientos adquiridos hasta el momento.
+
+Lee todo el documento antes de comenzar el desarrollo individual, para asegurarte de tener el máximo de puntaje y enfocar bien los esfuerzos.
+
+El objetivo de este hito es aprender a manejar el estado y los eventos en React. Para ello, deberán crear los formularios de registro y login de nuestra aplicación.
+
+### Requerimientos:
+
+1. Formulario de Registro: Crea un componente Register que contenga un formulario con los siguientes campos:
+
+- Email
+- Contraseña
+- Confirmar contraseña
+
+El formulario debe tener un botón de enviar que, al hacer click, muestre un mensaje de éxito si los datos son correctos o un mensaje de error si los datos son incorrectos.
+
+Aplica las siguientes validaciones mínimas:
+
+- Todos los campos son obligatorios (no pueden estar vacíos).
+- El password debe tener al menos 6 caracteres.
+- El password y la confirmación del password deben ser iguales.
+
+Tips: Puedes dejar comentado el componente Home en App.js para que solo se muestre el formulario de registro. (5 Puntos)
+
+Ejemplo:
+
+```javascript
+    const App = () => {
+        return (
+            <div>
+            <Navbar />
+            {/* <Home /> */}
+            <RegisterPage />
+            <Footer />
+            </div>
+        );
+    };
+
+    export default App;
+```
+2. Formulario de Login: Crea un componente Login que contenga un formulario con los siguientes campos:
+
+- Email
+- Contraseña
+
+El formulario debe tener un botón de enviar que, al hacer click, muestre un mensaje de éxito si los datos son correctos o un mensaje de error si los datos son incorrectos.
+
+Aplica las siguientes validaciones mínimas:
+
+- Todos los campos son obligatorios (no pueden estar vacíos).
+- El password debe tener al menos 6 caracteres.
+
+Tips: Puedes dejar comentado el componente Home y RegisterPage en App.js para que solo se muestre el formulario de login. (5 Puntos)
+
+Ejemplo:
+```javascript
+    const App = () => {
+        return (
+            <div>
+            <Navbar />
+            {/* <Home /> */}
+            {/* <RegisterPage /> */}
+            <LoginPage />
+            <Footer />
+            </div>
+        );
+    };
+    export default App;
+```
+
 ## Lenguajes utilizados
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
